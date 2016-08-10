@@ -11,7 +11,7 @@ var Browsersync  = require('browser-sync').create();
 
 //构建less
 gulp.task('build-less',function(){
-    return gulp.src('./src/less/*.less')
+    return gulp.src(['./src/less/*.less','./src/less/*.css'])
         .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 	    .pipe(less())
     	.pipe(autoprefixer({browsers: ['last 2 versions'],cascade: false}))

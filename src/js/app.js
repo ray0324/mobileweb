@@ -1,11 +1,18 @@
 require.config({
     paths: {
         "jquery": "js/lib/jquery-3.1.0.min",
-        "fastclick": "js/lib/fastclick"
+        "fastclick": "js/lib/fastclick",
+        "swiper":"js/lib/swiper/js/swiper.jquery.umd"
+    },
+    shim: {
+        "swiper": {　　　　　　
+            deps: ["jquery"],
+            exports: "swiper"　
+        }
     }
 })
 
-require(['jquery','fastclick'], function ($,FastClick){
+require(['jquery','fastclick','swiper'], function ($,FastClick,swiper){
     FastClick.attach(document.body);
 
     //导航条功能代码
@@ -32,7 +39,7 @@ require(['jquery','fastclick'], function ($,FastClick){
         $nav.on('click',function(e){
             e.stopPropagation();
         })
-        
+
         $sidebar.on('click',function(e){
             e.stopPropagation();
             $toolbar.removeClass('active');

@@ -9,22 +9,66 @@
     <meta http-equiv="Cache-Control" content="no-store" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>Home</title>
+    <title>成人课程中心</title>
+    <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/app.min.css">
+    <link rel="stylesheet" href="./css/teachers_intro.min.css">
 </head>
-<body>
+<body ontouchstart="!function(){}">
+
+    <header class="header">
+        <img class="logo" src="images/logo.svg" height="100%" width="auto" alt="logo">
+    </header>
+    <div class="toolbar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- <div class="tooltip">在<br>线<br>咨<br>询</div> -->
+    <aside class="sidebar" style="display:none">
+        <div class="overlay">
+            <nav class="nav">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">口碑课程</a></li>
+                    <li><a href="">培训中心</a></li>
+                    <li><a href="">师资介绍</a></li>
+                    <li><a href="">学习资源</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="">首页</a>&gt;<a href="">口碑课程</a>&gt;<span>成人课程中心</span>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="images/teachers_intro_01.jpg" alt="banner">
+        </div>
+        <div class="container cnt">
+            <p>我们拥有专业的师资队伍！来自全国舞蹈专业院校的中青年优秀骨干教师，具有前沿、尖端的文体活动策划组织能力、舞蹈编导能力、教育课题研究能力以及丰富的舞蹈教学经验。他们不仅教学经验丰富、风趣幽默，更善于激发学员的学习潜能，致力于帮助学员建立学习英语的自信。</p>
+            <p>现在就来认识一下我们的舞蹈培训老师吧！</p>
+            <div class="banner inner"><img src="images/teachers_intro_02.jpg" alt="banner"></div>
+            <p>花非花，舞非舞<br>花间起舞，却成为了时间最美的定格</p>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p>深圳舞蹈网培训基地(<a href="http://www.sz1w.com">http://www.sz1w.com</a>) </p>
+                <p>报名热线：0755-22928800，13528755000　</p>
+                <p>粤ICP备10000479号-1</p>
+            </div>
+        </footer>
+        <div class="btn-wrap">
+            <a class="btn-group red" href="#">400-800-***</a>
+            <a class="btn-group red" href="#">立即咨询</a>
+        </div>
 
 
-
-
-
+    </main>
 <script src="./js/lib/esl.js" data-main="js/app"></script>
-<script>
-    require.config({
-        paths: {
-            "jquery": "js/lib/jquery-3.1.0.min"
-        }
-    })
-</script>
 </body>
 </html>

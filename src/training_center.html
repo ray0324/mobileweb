@@ -9,22 +9,70 @@
     <meta http-equiv="Cache-Control" content="no-store" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>Home</title>
+    <title>培训中心</title>
+    <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/app.min.css">
+    <link rel="stylesheet" href="./css/training_center.min.css">
 </head>
-<body>
+<body ontouchstart="!function(){}">
+
+    <header class="header">
+        <img class="logo" src="images/logo.svg" height="100%" width="auto" alt="logo">
+    </header>
+    <div class="toolbar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- <div class="tooltip">在<br>线<br>咨<br>询</div> -->
+    <aside class="sidebar" style="display:none">
+        <div class="overlay">
+            <nav class="nav">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">口碑课程</a></li>
+                    <li><a href="">培训中心</a></li>
+                    <li><a href="">师资介绍</a></li>
+                    <li><a href="">学习资源</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="">首页</a>&gt;<a href="">口碑课程</a>&gt;<span>成人课程中心</span>
+            </div>
+        </div>
+        <div class="heading">
+            <h1>舞蹈网培训中心</h1>
+        </div>
+        <div class="container">
+            <h2>请选择离你最近的舞蹈培训基地</h2>
+            <ul class="list">
+                <li><a href="">罗湖校区（湖贝总店）</a></li>
+                <li><a href="">罗湖校区（东门分店）</a></li>
+                <li><a href="">福田校区（石厦总店）</a></li>
+                <li><a href="">福田校区（梅林分店）</a></li>
+                <li><a href="">龙岗校区（布吉分店）</a></li>
+                <li><a href="">南山校区</a></li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p>深圳舞蹈网培训基地(<a href="http://www.sz1w.com">http://www.sz1w.com</a>) </p>
+                <p>报名热线：0755-22928800，13528755000　</p>
+                <p>粤ICP备10000479号-1</p>
+            </div>
+        </footer>
+        <div class="btn-wrap">
+            <a class="btn-group red" href="#">400-800-***</a>
+            <a class="btn-group red" href="#">立即咨询</a>
+        </div>
 
 
-
-
-
+    </main>
 <script src="./js/lib/esl.js" data-main="js/app"></script>
-<script>
-    require.config({
-        paths: {
-            "jquery": "js/lib/jquery-3.1.0.min"
-        }
-    })
-</script>
 </body>
 </html>

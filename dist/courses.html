@@ -9,22 +9,83 @@
     <meta http-equiv="Cache-Control" content="no-store" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>Home</title>
+    <title>口碑课程</title>
+    <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/app.min.css">
+    <link rel="stylesheet" href="./css/courses.min.css">
 </head>
-<body>
+<body ontouchstart="!function(){}">
+
+    <header class="header">
+        <img class="logo" src="images/logo.svg" height="100%" width="auto" alt="logo">
+    </header>
+    <div class="toolbar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- <div class="tooltip">在<br>线<br>咨<br>询</div> -->
+    <aside class="sidebar" style="display:none">
+        <div class="overlay">
+            <nav class="nav">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">口碑课程</a></li>
+                    <li><a href="">培训中心</a></li>
+                    <li><a href="">师资介绍</a></li>
+                    <li><a href="">学习资源</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="">首页</a>&gt;<a href="">口碑课程</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="list-item item-1">
+                <h2>成人课程中心</h2>
+                <a href="#">+</a>
+            </div>
+            <div class="list-item item-2">
+                <h2>少儿课程中心</h2>
+                <a href="#">+</a>
+            </div>
+            <div class="list-item item-3">
+                <h2>教师进修课程中心</h2>
+                <a href="#">+</a>
+            </div>
+            <div class="list-item item-4">
+                <h2>速成班</h2>
+                <a href="#">+</a>
+            </div>
+            <div class="list-item item-5">
+                <h2>会员福利课</h2>
+                <a href="#">+</a>
+            </div>
+            <div class="list-item item-6">
+                <h2>私教课</h2>
+                <a href="#">+</a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p>深圳舞蹈网培训基地(<a href="http://www.sz1w.com">http://www.sz1w.com</a>) </p>
+                <p>报名热线：0755-22928800，13528755000　</p>
+                <p>粤ICP备10000479号-1</p>
+            </div>
+        </footer>
+        <div class="btn-wrap">
+            <a class="btn-group red" href="#">400-800-***</a>
+            <a class="btn-group red" href="#">立即咨询</a>
+        </div>
 
 
-
-
-
+    </main>
 <script src="./js/lib/esl.js" data-main="js/app"></script>
-<script>
-    require.config({
-        paths: {
-            "jquery": "js/lib/jquery-3.1.0.min"
-        }
-    })
-</script>
 </body>
 </html>

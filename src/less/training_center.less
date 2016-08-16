@@ -1,0 +1,51 @@
+.heading{
+    height: 160px;
+    background-image: url(../images/training_center.jpg);
+    background-size: 100% 100%;
+    h1{
+        font-size: 30px;
+        margin:0;
+        padding: 50px 0;
+        height: 60px;
+        line-height: 60px;
+        // font-weight: normal;
+        letter-spacing: 5px;
+        color:#fff;
+        text-align: center;
+    }
+}
+
+h2{
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    &:after {
+        display: block;
+        position : absolute;
+        bottom : 0;
+        left : 0;
+        width : 100%;
+        height : 0;
+        content : '\20';
+        transform : scaleY(.5);
+        transform-origin : center bottom;
+        border-bottom : 1px solid #ddd;
+    }
+}
+.list{
+    margin:0;
+    padding: 20px 0;
+    list-style: none;
+    li{
+        a{
+            display: block;
+            width: 100%;
+            height: 36px;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            color:#4a5769;
+        }
+    }
+}

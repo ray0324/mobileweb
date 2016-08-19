@@ -12,6 +12,7 @@
     <title>成人课程中心</title>
     <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/app.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/adult_course_center.min.css">
 </head>
 <body ontouchstart="!function(){}">
@@ -49,9 +50,7 @@
             <img src="images/adult_course_center_01.jpg" alt="banner">
         </div>
         <div class="focus">
-            <div class="banner">
-                <img src="images/adult_course_center_02.jpg" alt="banner">
-            </div>
+            <img class="img-response" src="images/adult_course_center_02.jpg" alt="banner">
             <div class="strength">
                 <h2>我们的优势</h2>
                 <p>· 我们是卓著的私人英语培训机构，提供语言学习、海外游学、文化交流及学位课程等服务。</p>
@@ -60,51 +59,81 @@
                 <a class="btn-zixun" href="#">预约免费体验课程咨询</a>
             </div>
         </div>
-        <div class="gray">
-            <div class="desc">
-                <div class="container">
+        <div class="desc gray">
+            <div class="container">
                     <h3 class="blue">爵士舞 [Jazz Dance]</h3>
                     <p>Jazz（爵士舞）吸收了芭蕾、现代舞、街舞、拉丁舞的元素和技巧，优美、热情，因延展身体表现出优美曲线。是当今女明星在舞台上最常表现的舞蹈，例如李孝利、蔡依林、Janet Jackson（珍妮 杰克逊）等，都是这种舞蹈风格表演者的代表。爵士的劲爆，妖娆，性感，以及其独特的特性，适合广大上班族选跳，尤其受到广大在校女孩子的青眯。</p>
                     <h4 class="blue">爵士舞 明星MV舞蹈班 课程表</h4>
-                    <div class="banner">
-                        <img src="images/adult_course_center_03.jpg" alt="banner">
+                    <img class="img-response" src="images/adult_course_center_03.jpg" alt="banner">
+                    <h4 class="blue">爵士舞视频 [JAZZ VIDEO]</h4>
+                    <div class="swiper-container-wraper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <iframe class="video_iframe" src="http://v.qq.com/iframe/player.html?vid=a0160euaj6l&amp;width=300&amp;height=200&amp;auto=0" allowfullscreen="1" frameborder="0" width="300" height="200" ></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe class="video_iframe" src="http://v.qq.com/iframe/player.html?vid=a0160euaj6l&amp;width=300&amp;height=200&amp;auto=0" allowfullscreen="1" frameborder="0" width="300" height="200" ></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe class="video_iframe" src="http://v.qq.com/iframe/player.html?vid=a0160euaj6l&amp;width=300&amp;height=200&amp;auto=0" allowfullscreen="1" frameborder="0" width="300" height="200" ></iframe>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination-black"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
+                        </div>
+                    </div>
+                    <h4 class="blue">爵士舞图片 [JAZZ PHOTO]</h4>
+                    <!-- Swiper -->
+                    <div class="swiper-container-wraper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-response" src="images/adult_course_center_04.jpg" alt="banner">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-response" src="images/adult_course_center_04.jpg" alt="banner">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-response" src="images/adult_course_center_04.jpg" alt="banner">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-response" src="images/adult_course_center_04.jpg" alt="banner">
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination-black"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-black"></div>
+                            <div class="swiper-button-prev swiper-button-black"></div>
+                        </div>
                     </div>
                 </div>
-                <h4 class="blue">爵士舞视频 [JAZZ VIDEO]</h4>
-                <div class="banner">
-                    <img src="images/adult_course_center_08.jpg" alt="banner">
-                    <div class="tips">深圳舞蹈网韩舞教学《GOODBOY》学员成品舞外景展示</div>
-                </div>
-                <h4 class="blue">爵士舞图片 [JAZZ PHOTO]</h4>
-                <div class="banner">
-                    <img src="images/adult_course_center_04.jpg" alt="banner">
-                </div>
-            </div>
         </div>
+
         <div class="desc">
             <div class="container">
                 <h3 class="red">拉丁舞 [Latin Dance]</h3>
                 <p>拉丁舞，国际标准舞中的一个舞系，包括伦巴、恰恰、桑巴、牛仔、斗牛五个舞种。其中，恰恰轻巧、快速活泼，伦巴缠绵、婀娜多姿，桑巴动感、摇曳多变，斗牛神气、刚劲雄壮，牛仔摇滚热情。拉丁舞是具有鲜明特点的激情、浪漫而又富有活力、火热的艺术表现形式，有较大的自由发挥空间，以运动肩部、腹部、腰部、臀部为主</p>
                 <h4 class="red">国标舞（拉丁舞 摩登舞 交谊舞）课程表</h4>
+                <img class="img-response" src="images/adult_course_center_05.jpg" alt="banner">
+                <h4 class="red">拉丁舞视频 [LATIN VIDEO]</h4>
+                <img class="img-response" src="images/adult_course_center_08.jpg" alt="banner">
+                <div class="tips">深圳舞客成人拉丁舞舞段课间练习视频</div>
+                <h4 class="red">拉丁舞图片 [LATIN PHOTO]</h4>
                 <div class="banner">
-                    <img src="images/adult_course_center_05.jpg" alt="banner">
+                    <img src="images/adult_course_center_04.jpg" alt="banner">
                 </div>
             </div>
-            <h4 class="red">拉丁舞视频 [LATIN VIDEO]</h4>
-            <div class="banner">
-                <img src="images/adult_course_center_08.jpg" alt="banner">
-                <div class="tips">深圳舞客成人拉丁舞舞段课间练习视频</div>
-            </div>
-            <h4 class="red">拉丁舞图片 [LATIN PHOTO]</h4>
-            <div class="banner">
-                <img src="images/adult_course_center_04.jpg" alt="banner">
-            </div>
         </div>
-        <div class="gray">
-            <div class="desc">
-                <div class="container">
-                    <h3 class="pink">形体芭蕾 [Ballt Dance]</h3>
-                    <p>形体芭蕾，由芭蕾延伸而来，以培养良好形态的身体练习为主要目的。芭蕾的“开、蹦、直”三要素具有收缩肌肉纤维的功能，在动静结合的运动中有效地消耗多余脂肪，使人练后身材会变得更修长。动作更强调肌肉的耐力、身体的柔韧性，运动强度不是很大，适合想改善形体、培养气质的女性。</h4>
+
+        <div class="desc gray">
+            <div class="container">
+                <h3 class="pink">形体芭蕾 [Ballt Dance]</h3>
+                <p>形体芭蕾，由芭蕾延伸而来，以培养良好形态的身体练习为主要目的。芭蕾的“开、蹦、直”三要素具有收缩肌肉纤维的功能，在动静结合的运动中有效地消耗多余脂肪，使人练后身材会变得更修长。动作更强调肌肉的耐力、身体的柔韧性，运动强度不是很大，适合想改善形体、培养气质的女性。</h4>
                     <h4 class="pink">芭蕾形体训练+中国舞综合班 课程表</h4>
                     <div class="banner">
                         <img src="images/adult_course_center_07.jpg" alt="banner">
@@ -120,7 +149,7 @@
                     <img src="images/adult_course_center_04.jpg" alt="banner">
                 </div>
             </div>
-        </div>
+
         <div class="desc">
             <div class="container">
                 <h3 class="light-blue">肚皮舞 [Belly Dance]</h3>

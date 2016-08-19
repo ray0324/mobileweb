@@ -1,0 +1,62 @@
+.tab{
+    .th{
+        height: 30px;
+    }
+    .th-item{
+        display: block;
+        width: percentage(1/3);
+        height: 30px;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+        color:#fff;
+        background: #252525;
+        text-decoration: none;
+        font-size: 14px;
+        i{
+            display: inline-block;
+            width: 14px;
+            height:14px;
+            vertical-align: middle;
+            background-image:url(../images/sources_iocns.png);
+            background-size: 28px 42px;
+            margin-right: 3px;
+            margin-top: -2px;
+            &.ico1{
+                background-position: -14px 0;
+            }
+            &.ico2{
+                background-position: -14px -14px;
+            }
+            &.ico3{
+                background-position: -14px -28px;
+            }
+        }
+        &.active{
+            background: #fff;
+            color:#666;
+            i{
+                &.ico1{
+                    background-position: 0 0;
+                }
+                &.ico2{
+                    background-position: 0 -14px;
+                }
+                &.ico3{
+                    background-position: 0 -28px;
+                }
+            }
+        }
+    }
+}
+
+.cnt{
+    color:#4a5769;
+    padding-bottom: 20px;
+    p{
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+}

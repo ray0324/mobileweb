@@ -5,15 +5,15 @@ require.config({
         "swiper":"js/lib/swiper/js/swiper.jquery.umd"
     },
     shim: {
-        "swiper": {　　　　　　
+        "Swiper": {　　　　　　
             deps: ["jquery"],
-            exports: "swiper"　
+            exports: "Swiper"　
         }
     }
 })
 
-require(['jquery','fastclick','swiper'], function ($,FastClick,swiper){
-    FastClick.attach(document.body);
+require(['jquery','fastclick','swiper'], function ($,FastClick,Swiper){
+    FastClick.attach(document.body);//消除点击延迟
 
     //导航条功能代码
     !function(){
@@ -48,6 +48,13 @@ require(['jquery','fastclick','swiper'], function ($,FastClick,swiper){
         })
     }()
 
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 10,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
 
 
 

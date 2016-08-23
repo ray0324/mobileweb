@@ -2,18 +2,27 @@ require.config({
     paths: {
         "jquery": "js/lib/jquery-3.1.0.min",
         "fastclick": "js/lib/fastclick",
-        "swiper":"js/lib/swiper/js/swiper.jquery.umd"
+        "swiper":"js/lib/swiper/js/swiper.jquery.umd",
+        "viewer":'js/lib/viewer/viewer.min',
     },
+
+
+
     shim: {
-        "Swiper": {　　　　　　
+        "swiper": {　　　　　　
             deps: ["jquery"],
-            exports: "Swiper"　
+            exports: "swiper"　
+        },
+        "viewer":{
+            deps: ["jquery"],
+            exports: "viewer"　
         }
     }
 })
 
-require(['jquery','fastclick','swiper'], function ($,FastClick,Swiper){
-    FastClick.attach(document.body);//消除点击延迟
+require(['jquery','fastclick','swiper','viewer'], function ($,FastClick,swiper,viewer){
+
+    FastClick.attach(document.body);
 
     //导航条功能代码
     !function(){
@@ -54,10 +63,14 @@ require(['jquery','fastclick','swiper'], function ($,FastClick,Swiper){
         spaceBetween: 10,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev'
+
+    $('.images').viewer({
+        navbar:false,
+        title:false,
+        toolbar:false,
+
     });
 
 
 
-
-    // alert(1)
 });

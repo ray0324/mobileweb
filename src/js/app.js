@@ -1,9 +1,9 @@
 require.config({
     paths: {
-        "jquery": "js/lib/jquery-3.1.0.min",
-        "fastclick": "js/lib/fastclick",
-        "swiper":"js/lib/swiper/js/swiper.jquery.umd",
-        "viewer":'js/lib/viewer/viewer.min',
+        "jquery": "vendor/jquery/jquery-3.1.0.min",
+        "fastclick": "vendor/fastclick",
+        "swiper":"vendor/swiper/js/swiper.jquery.min",
+        "viewer":'vendor/viewer/viewer.min',
     },
     shim: {
         "swiper": {　　　　　　
@@ -17,7 +17,12 @@ require.config({
     }
 })
 
-require(['jquery','fastclick','swiper','viewer'], function ($,FastClick,swiper,viewer){
+require([
+    'jquery',
+    'fastclick',
+    'swiper',
+    'viewer'
+], function ($,FastClick,swiper,viewer){
 
     FastClick.attach(document.body);
 
@@ -54,8 +59,8 @@ require(['jquery','fastclick','swiper','viewer'], function ($,FastClick,swiper,v
         })
     }()
 
-    if(document.querySelectorAll('.swiper-container').length>0){
-        var swiper = new swiper('.swiper-container', {
+    if(document.querySelectorAll('.swiper-container').length > 0){
+        $('.swiper-container').swiper( {
             pagination: '.swiper-pagination',
             paginationClickable: true,
             spaceBetween: 10,
@@ -63,6 +68,7 @@ require(['jquery','fastclick','swiper','viewer'], function ($,FastClick,swiper,v
             prevButton: '.swiper-button-prev'
         })
     }
+
     if(document.querySelectorAll('.images').length > 0){
         $('.images').viewer({
             navbar:false,

@@ -22,7 +22,7 @@ gulp.task('build-less',function(){
 
 // 构建js
 gulp.task('build-js',function(){
-    return gulp.src(['./src/js/**/*.js','!./src/js/lib/**/*.js'])
+    return gulp.src(['./src/js/**/*.js'])
          .pipe(sourcemaps.init())
          .pipe(uglify({
              mangle: {except: ['require' ,'exports' ,'module' ,'$']} //保留的变量名称
@@ -41,8 +41,8 @@ gulp.task('build-html',function(){
 gulp.task('copy',function(){
     gulp.src(['./src/images/**/*'])
             .pipe(gulp.dest('./dist/images/'));
-    gulp.src(['./src/js/lib/**/*.js'])
-            .pipe(gulp.dest('./dist/js/lib/'));
+    gulp.src(['./src/vendor/**/*'])
+            .pipe(gulp.dest('./dist/vendor/'));
 })
 
 
